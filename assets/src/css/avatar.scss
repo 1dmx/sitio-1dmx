@@ -1,0 +1,118 @@
+@import "_reset";
+@import "_tipografia";
+
+@mixin maxWidth() {
+	width: 100%;
+	max-width: 960px;
+	margin: 1em auto;
+}
+
+header, #editing-area, #inputs, #pictures {
+	@include maxWidth;
+}
+
+
+h1 {
+	font-size: 4em;
+	line-height:1.5em;
+	text-align:center;
+}
+
+.boton {
+	width: 20%;
+	display: inline-block;
+	margin: 0 auto;
+	background: #333;
+	font-size: 1.5em;
+	line-height:1.5em;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: .5em;
+	border-radius: 3px;
+	margin-bottom: 1em;
+}
+
+.boton:hover {
+	background: #000;
+}
+
+#editing-area {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+#inputs {
+	text-align: center
+}
+
+#snap-controls {
+	text-align:center;
+}
+
+#snap {
+	width: 30px;
+	background: rgba(0,0,0,.5);
+	text-align: center;
+	margin: 0 auto;
+	top: -1em;
+	position: relative;
+	line-height: 1em;
+
+	&:hover {
+		background: #f00;
+	}
+}
+
+#snap img {
+	width: 100%;
+}
+
+#block {
+	width:0;
+	height: 0;
+	background: #000;
+	position: absolute;
+}
+
+#pictures {
+	min-height: 400px;
+	padding: 10px;
+	width: 100%;
+	max-width: 960px;
+	box-sizing: border-box; 
+}
+
+#pictures img {
+	max-height: 200px;
+	border: 1px solid #ddd;
+	padding: 5px;
+	background: #fff;
+	margin: 0 1em 1em 0;
+
+	&.selected-pic {
+		background: #4B6675 !important;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.boton {
+		width: 30%;
+		font-size: 1em;
+	}
+	header p {width: 95%; margin: 0 auto}
+}
+
+@media screen and (max-width: 550px) {
+	header p {width: 95%; margin: 0 auto}
+	h1 {
+		font-size: 2em;
+	}
+
+	#pictures img {
+		max-height: 100px; 
+	}
+}
