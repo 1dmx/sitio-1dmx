@@ -45,7 +45,7 @@ $ ()->
 				fd = new FormData()
 				access_token = res.authResponse.accessToken
 				fd.append('access_token', access_token)
-				fd.append("message","#CensuraMEXta http://op1d.mx")
+				fd.append("message","#CensuraMEXta http://op1d.mx/censuramexta")
 				fd.append('source', blob, 'CensuraMEXta.png')
 				opts = 
 					url: "https://graph.facebook.com/me/photos?access_token=#{access_token}"
@@ -57,7 +57,7 @@ $ ()->
 				req = $.ajax opts
 				req.done (data)->
 					if (confirm('Ya está tu foto en Facebook, ¿deseas verla?'))
-						window.open "https://facebook.com/#{data.id}", "_blank"
+						window.location.href = "https://facebook.com/#{data.id}"
 			else
 				return FB.login postToFacebook, {scope:'user_photos,publish_stream'}
 
