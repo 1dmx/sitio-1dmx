@@ -36,6 +36,7 @@
 				<div class="fb-share-button" data-href="http://op1d.mx" data-width="100px" data-type="button" data-lang="es"></div>
 			</div>
 			<a href="http://original.op1d.mx" class="boton"><?= __('1dmx.org (censurado)') ;?></a>
+			<a href="http://op1d.mx/censuramexta" class="boton"><?= __('Crea tu avatar') ;?></a>
 		</div>
 
 

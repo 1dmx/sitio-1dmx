@@ -26,6 +26,7 @@ function __($str) {
 		'Saltar video' => 'Skip video',
 		'Sigue @censuraMX' => 'Follow @censuraMX',
 		'1dmx.org (censurado)' => '1dmx.org (censored)',
+		'Crea tu avatar' => 'Censor your avatar',
 		'%d de %B de %Y' => '%B %d, %Y',
 		'El gobierno mexicano a través de la embajada de Estados Unidos, censura el sitio 1dmx.org, un portal ciudadano que denunciaba las violaciones a los derechos humanos.' => 'The mexican government, through the embassy of the United States, censors the website 1dmx.org, a citizen\'s portal that denounced human rights violations.'
 	];

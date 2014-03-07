@@ -11,7 +11,7 @@
 
 	<header>
 		<h1>#CensuraMEXta</h1>
-		<p>Tampoco quiero que censuren internet</p>
+		<p>Tampoco quiero que censuren internet. Tómate una foto y arrastra el cursor sobre tus ojos para crear tu avatar.</p>
 	</header>
 
 	<div id="editing-area">
